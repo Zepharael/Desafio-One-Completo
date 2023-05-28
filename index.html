@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIFRADOR Y DESCIFRADOR</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script src="script/cifrador.js"></script>
+
+    <h1>CIFRAR Y DESCIFRAR</h1>
+
+    <p>Utiliza <strong>cifrar y descifrar</strong> para ocultar un texto y úsalo para comunicarte sin que intermediarios vean lo que quieres expresar.</p>
+
+    <div id="container">
+      <h2>Cifrador-Descifrador</h2>
+      <pre>Ingresa el texto que quieres cifrar o descifrar:</pre>
+      <textarea id="texto"></textarea><br><br>
+      <div class="resultado-container">
+        <label class="label" for="resultado">Resultado:</label>
+        <textarea id="resultado" class="resultado"></textarea>
+      </div>
+    </div>
+    
+    <div class="button-container">
+        <button class="button-cifrar" onclick="cifrar()">Cifrar</button>
+        <button class="button-descifrar" onclick="descifrar()">Descifrar</button>
+        <button class="button-copiar" onclick="copiar()">Copiar</button>
+        <button class="button-pegar" onclick="pegar()">Pegar</button>
+        <button class="button-borrar" onclick="borrar()">Borrar</button>
+      </div>
+  </body>
+</html>
